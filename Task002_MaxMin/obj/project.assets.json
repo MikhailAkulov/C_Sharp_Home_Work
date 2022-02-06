@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Akulo\\Desktop\\C_Sharp Home Work\\Task002_MaxMin\\Task002_MaxMin.csproj",
+      "projectUniqueName": "C:\\Users\\Akulo\\Desktop\\C_Sharp_Home_Work\\Task002_MaxMin\\Task002_MaxMin.csproj",
       "projectName": "Task002_MaxMin",
-      "projectPath": "C:\\Users\\Akulo\\Desktop\\C_Sharp Home Work\\Task002_MaxMin\\Task002_MaxMin.csproj",
+      "projectPath": "C:\\Users\\Akulo\\Desktop\\C_Sharp_Home_Work\\Task002_MaxMin\\Task002_MaxMin.csproj",
       "packagesPath": "C:\\Users\\Akulo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Akulo\\Desktop\\C_Sharp Home Work\\Task002_MaxMin\\obj\\",
+      "outputPath": "C:\\Users\\Akulo\\Desktop\\C_Sharp_Home_Work\\Task002_MaxMin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Akulo\\AppData\\Roaming\\NuGet\\NuGet.Config"
