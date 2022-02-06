@@ -1,0 +1,30 @@
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.exe
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.deps.json
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.runtimeconfig.json
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\bin\Debug\net6.0\ref\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.pdb
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.csproj.AssemblyReference.cache
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.AssemblyInfoInputs.cache
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.AssemblyInfo.cs
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.csproj.CoreCompileInputs.cache
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\ref\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.pdb
+C:\Users\Akulo\Desktop\C SHarp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.genruntimeconfig.cache
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.exe
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.deps.json
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.runtimeconfig.json
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\bin\Debug\net6.0\ref\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\bin\Debug\net6.0\Task002_MaxMin.pdb
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.csproj.AssemblyReference.cache
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.AssemblyInfoInputs.cache
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.AssemblyInfo.cs
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.csproj.CoreCompileInputs.cache
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\ref\Task002_MaxMin.dll
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.pdb
+C:\Users\Akulo\Desktop\C_Sharp Home Work\Task002_MaxMin\obj\Debug\net6.0\Task002_MaxMin.genruntimeconfig.cache
