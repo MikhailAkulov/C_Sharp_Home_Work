@@ -9,12 +9,12 @@ Console.WriteLine(); // Пустая строка для отделения от
 
 int max = numberA;
 int min = numberB;
-if(numberB > numberA) max = numberB;
+if (numberB > numberA) max = numberB;
 {
     Console.Write("Большее число = ");
     Console.WriteLine(max);
 }
-if(numberA < numberB) min = numberA;
+if (numberA < numberB) min = numberA;
 {
     Console.Write("Меньшее число = ");
     Console.WriteLine(min);
