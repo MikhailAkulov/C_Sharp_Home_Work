@@ -1,8 +1,8 @@
 ﻿// Задача 14. Найти третью цифру числа или сообщить, что её нет
 
-Console.Write("Введите трёхзначное число число: ");
+Console.Write("Введите число не менее трёх цифр: ");
 
-string input = Console.ReadLine();
+string? input = Console.ReadLine();
 
 if (int.TryParse(input, out int result))
 {
