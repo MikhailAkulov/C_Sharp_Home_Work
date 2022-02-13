@@ -1,14 +1,33 @@
 ﻿// Задача 24. Найти кубы чисел от 1 до N
 
-Console.Write("Введите число N: ");
-string? numN = Console.ReadLine();
-int number = int.Parse(numN);
-int min = 1;
-while (min < number)
+int InPut(string message)
 {
-    if (min > 0)
-        Console.Write(((min+1) * (min+1) * (min+1)) + " ");
-    min++;
+    Console.Write(message);
+    string num1 = Console.ReadLine();
+    return int.Parse(num1);
 }
-if (number < 0)
-    Console.Write("Ввели отрицательное число, попробуйте ещё разок");
+
+int[] InitArray(int number)
+{
+    int[] array = new int[number];
+
+    for (int i = 0; i < number; i++)
+    {
+        array[i] = (i + 1) * (i + 1) * (i + 1);
+    }
+    return array;
+}
+
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine($"{i+1}^3 = {array[i]}");
+    }
+}
+
+int b = InPut("Введите число N > 1: ");
+
+var array = InitArray(b);
+
+PrintArray(array);
