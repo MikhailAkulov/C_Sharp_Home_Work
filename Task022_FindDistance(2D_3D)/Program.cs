@@ -1,58 +1,48 @@
 ﻿// Задача 22. Найти расстояние между точками в пространстве 2D/3D
 
-//  Console.WriteLine();
-//  Console.ReadLine();
+string space = String.Empty;
 
-//  Random r = new Random();
-
-//  var temp = Math.
-
-//  var temp = Math.Pow(2,4); // var x = 2*2*2*2;
-
-// метод ввода целого значения с проверкой
-int GetIntegerFromConsole(string message, (int?, int?) range)
+while (space.ToLower() != "2d" || space.ToLower() != "3d")
 {
-    int result = 0;
-    bool isNotCorrect = true;
-    while (isNotCorrect)
-    {
-        Console.Write(message);
-        string? input = Console.ReadLine();
-        if (int.TryParse(input, out result))
-        {
-            isNotCorrect = range.Item1 != null && result < range.Item1 || range.Item2 != null && result > range.Item2;
-        }
-
-    }
-    return result;
+    Console.WriteLine("Укажите 2D или 3D пространство для расчёта расстояния между точками: ");
+    space = Console.ReadLine();
+    if (space.ToLower() == "2d" || space.ToLower() == "3d")
+        break;
 }
 
-// метод заполнения массива координат вводом из консоли
-void FullArrayCoordinates(int[] coordinates, string partMessage)
+double GetPoint()
 {
-    for (int i = 0; i < coordinates.Length; i++)
-    {
-        string message = $"Введите координату по оси №{i + 1}{partMessage}: ";
-        coordinates[i] = GetIntegerFromConsole(message, (null, null));
-    }
+    Console.Write("Введите координаты точки: ");
+    string? numberStr = Console.ReadLine();
+    double number = int.Parse(numberStr);
+    return number;
 }
 
-// метод расчета расстояния между двумя точками для n мерного пространства
-double DistanceBetweenPoints(int measure)
+if (space.ToLower() == "2d")
 {
-    int[] coordinatesPoint1 = new int[measure];
-    int[] coordinatesPoint2 = new int[measure];
-    FullArrayCoordinates(coordinatesPoint1, " для первой точки");
-    FullArrayCoordinates(coordinatesPoint2, " для второй точки");
-    int sumSquad = 0;
-    for (int i = 0; i < measure; i++)
-    {
-        sumSquad += (coordinatesPoint1[i] - coordinatesPoint2[i]) * (coordinatesPoint1[i] - coordinatesPoint2[i]);
-    }
-    return Math.Sqrt(sumSquad);
-}
+    double x1 = GetPoint();
+    double y1 = GetPoint();
+    Console.WriteLine($"Координаты первой точки (x, y): ({x1}, {y1})");
+        
+    double x2 = GetPoint();
+    double y2 = GetPoint();
+    Console.WriteLine($"Координаты второй точки (x, y): ({x2}, {y2})");
 
-Console.WriteLine("Расстояние между точками в 2D");
-Console.WriteLine($"Расстояние:{DistanceBetweenPoints(2)}");
-Console.WriteLine("Расстояние между точками в 3D");
-Console.WriteLine($"Расстояние:{DistanceBetweenPoints(3)}");
+    double distance2D = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+    Console.WriteLine($"Расстояние между точками: {distance2D}");
+}
+if (space.ToLower() == "3d")
+{
+    double x1 = GetPoint();
+    double y1 = GetPoint();
+    double z1 = GetPoint();
+    Console.WriteLine($"Координаты первой точки (x, y, z): ({x1},{y1},{z1})");
+        
+    double x2 = GetPoint();
+    double y2 = GetPoint();
+    double z2 = GetPoint();
+    Console.WriteLine($"Координаты второй точки (x, y, z): ({x2},{y2},{z2})");
+
+    double distance3D = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2) + Math.Pow((z2 - z1), 2));
+    Console.WriteLine($"Расстояние между точками: {distance3D}");
+}
