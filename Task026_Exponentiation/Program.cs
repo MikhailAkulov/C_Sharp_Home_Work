@@ -1,18 +1,30 @@
 ﻿// Задача 26. Возведите число А в натуральную степень B используя цикл
 
-Console.Write("Введите число A (которое необходимо возвести в степень): ");
-string? numberStrA = Console.ReadLine();
-Console.Write("Введите число B (степень, в которую необходимо возвести число): ");
-string? numberStrB = Console.ReadLine();
+bool result = true;
+string numberStrA = string.Empty;
+string numberStrB = string.Empty;
+double numberA = 0;
+double numberB = 0;
 
-double numberA = int.Parse(numberStrA);
-double numberB = int.Parse(numberStrB);
+while (numberA <= 0)
+{
+    Console.Write("Введите число A (которое необходимо возвести в степень): ");
+    numberStrA = Console.ReadLine();
+    result = double.TryParse(numberStrA, out numberA);
+}
 
-double result = 1;
+while (numberB <= 0)
+{
+    Console.Write("Введите число B (степень, в которую необходимо возвести число): ");
+    numberStrB = Console.ReadLine();
+    result = double.TryParse(numberStrB, out numberB);
+}
+
+double exponentiation = 1;
 
 for (int i = 0; i < numberB; i++)
 {
-    result *= numberA;
+    exponentiation *= numberA;
 }
 
-Console.WriteLine($"{numberA}^{numberB} = {result}");
+Console.WriteLine($"{numberA}^{numberB} = {exponentiation}");
