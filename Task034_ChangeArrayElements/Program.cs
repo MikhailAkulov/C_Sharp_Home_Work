@@ -11,7 +11,7 @@ void FillArray(int[] collection)
 
     while (index < length)
     {
-        collection[index] = new Random().Next(-10,11);
+        collection[index] = new Random().Next(-10, 11);
         index++;
     }
 }
@@ -21,11 +21,11 @@ void PrintArray(int[] col)
     int count = col.Length;
     int position = 0;
 
-    while (position<count)
+    while (position < count)
     {
         Console.Write(col[position] + " ");
         position++;
-    } 
+    }
 }
 
 void ReplaceArray(int[] arr)
@@ -33,7 +33,7 @@ void ReplaceArray(int[] arr)
     int[] replaceArray = new int[arr.Length];
     for (int i = 0; i < arr.Length; i++)
     {
-        replaceArray[i] = arr[i]*(-1);
+        replaceArray[i] = arr[i] * (-1);
         Console.Write($"{replaceArray[i]} ");
     }
 }
