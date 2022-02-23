@@ -10,7 +10,7 @@ for (int i = 0; i < s.Length; i++)
     if (array[i] > 0)
     {
         count++;
-    }    
+    }
 }
 Console.WriteLine($"Количество чисел > 0: {count}");
 
