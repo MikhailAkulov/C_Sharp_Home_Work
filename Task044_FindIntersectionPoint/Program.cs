@@ -13,7 +13,7 @@ Console.WriteLine($"k2 задана = {k2}");
 
 if (k1 == k2)
 {
-    Console.WriteLine("Прямые параллельны");
+    Console.WriteLine("Прямые не пересекаются");
 }
 else
 {
