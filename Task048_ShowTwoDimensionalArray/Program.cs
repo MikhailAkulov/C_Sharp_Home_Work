@@ -22,7 +22,7 @@ while (numberN <= 0)
     result = int.TryParse(numberStrN, out numberN);
 }
 
-int[,] array = new int[numberM,numberN];
+int[,] array = new int[numberM, numberN];
 Random rand = new Random();
 void FillArray()
 {
@@ -30,7 +30,7 @@ void FillArray()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i,j] = new Random().Next(1, 10);
+            array[i, j] = new Random().Next(1, 10);
         }
     }
 }
@@ -41,7 +41,7 @@ void PrintArray()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i,j]} ");
+            Console.Write($"{array[i, j]} ");
         }
         Console.WriteLine();
     }
