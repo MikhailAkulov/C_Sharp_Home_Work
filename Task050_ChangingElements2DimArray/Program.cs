@@ -1,6 +1,6 @@
 ﻿// Задача 50. В двумерном массиве n×k заменить четные элементы на противоположные
 
-int[,] array = new int[6,8];
+int[,] array = new int[6, 8];
 Random rand = new Random();
 void FillArray()
 {
@@ -8,7 +8,7 @@ void FillArray()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i,j] = new Random().Next(1, 10);
+            array[i, j] = new Random().Next(1, 10);
         }
     }
 }
@@ -19,7 +19,7 @@ void PrintArray()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i,j]}\t");
+            Console.Write($"{array[i, j]}\t");
         }
         Console.WriteLine();
     }
@@ -35,7 +35,7 @@ void ChangeEvenElements()
             {
                 array[i, j] = array[i, j] * -1;
             }
-            Console.Write($"{array[i,j]}\t");
+            Console.Write($"{array[i, j]}\t");
         }
         Console.WriteLine();
     }
