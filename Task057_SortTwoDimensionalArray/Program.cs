@@ -1,11 +1,9 @@
 ﻿// Задача 57. Написать программу, упорядочивания по убыванию элементов каждой строки двумерного массива.
 
-Console.Clear();
-Console.WriteLine();
+int[,] array = new int[6, 6];
 Random rand = new Random();
 int[,] FillArray()
 {
-    int[,] array = new int[5, 8];
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
@@ -22,13 +20,13 @@ void PrintArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($" {array[i, j]} ");
+            Console.Write($"{array[i, j]} ");
         }
         Console.WriteLine();
     }
 }
 
-int[,] SortArray(int[,] array)
+int[,] SelectionSotr(int[,] array)
 {
     for (int i = 0; i < array.GetLength(1); i++)
     {
@@ -49,9 +47,9 @@ int[,] SortArray(int[,] array)
     }
     return array;
 }
-int[,] doubleMass = FillArray();
+int[,] firstArray = FillArray();
 Console.WriteLine("Задан двумерный массив следующих элементов:");
-PrintArray(doubleMass);
-int[,] newDoubleMass = SortArray(doubleMass);
+PrintArray(firstArray);
+int[,] secondArray = SelectionSotr(firstArray);
 Console.WriteLine("Отсортированный массив будет следующим:");
-PrintArray(newDoubleMass);
+PrintArray(secondArray);
