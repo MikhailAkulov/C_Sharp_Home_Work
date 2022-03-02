@@ -1,20 +1,19 @@
 ﻿// Задача 57. Написать программу, упорядочивания по убыванию элементов каждой строки двумерного массива.
 
-int[,] array = new int[6, 6];
+int[,] array = new int[2, 10];
 Random rand = new Random();
-int[,] FillArray()
+void FillArray()
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = rand.Next(10, 100);
+            array[i, j] = new Random().Next(10, 100);
         }
     }
-    return array;
 }
 
-void PrintArray(int[,] array)
+void PrintArray()
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -26,30 +25,28 @@ void PrintArray(int[,] array)
     }
 }
 
-int[,] SelectionSotr(int[,] array)
+void SortArray()
 {
-    for (int i = 0; i < array.GetLength(1); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < array.GetLength(0) - 1; j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             int maxPosition = j;
-            for (int k = j + 1; k < array.GetLength(0); k++)
+            for (int k = j + 1; k < array.GetLength(1); k++)
             {
-                if (array[i, k] > array[i, maxPosition])
-                {
-                    maxPosition = k;
-                }
+                if (array[i, k] > array[i, maxPosition]) maxPosition = k;
             }
-            int temporary = array[i, j];
+            int temporary = array[i,j];
             array[i, j] = array[i, maxPosition];
             array[i, maxPosition] = temporary;
+            Console.Write($"{array[i, j]} ");
         }
+        Console.WriteLine();
     }
-    return array;
 }
-int[,] firstArray = FillArray();
-Console.WriteLine("Задан двумерный массив следующих элементов:");
-PrintArray(firstArray);
-int[,] secondArray = SelectionSotr(firstArray);
-Console.WriteLine("Отсортированный массив будет следующим:");
-PrintArray(secondArray);
+
+Console.WriteLine("Первоначальный вид массива:");
+FillArray();
+PrintArray();
+Console.WriteLine("Массив с упорядоченными по убыванию элементами:");
+SortArray();
