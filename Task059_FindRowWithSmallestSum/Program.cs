@@ -42,24 +42,24 @@ void FindSumString()
 void PrintMinString()
 {
     int minSumString = int.MaxValue;
-    int indexMinStringSum = 0;
+    int indexMinSumString = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         int sumString = 0;
         for (int j = 0; j < array.GetLength(1); j++)
         {
             sumString += array[i,j];
-            if (sumString < minSumString) 
-            {
-                minSumString = sumString;
-                indexMinStringSum = i;
-            }
+        }
+        if (sumString < minSumString) 
+        {
+            minSumString = sumString;
+            indexMinSumString = i;
         }
     }
-    Console.WriteLine($"Строка с наименьшей суммой элементов: {indexMinStringSum} ");
+    Console.WriteLine($"Строка с наименьшей суммой элементов: {indexMinSumString}");
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        Console.Write(array[indexMinStringSum, j] + " ");
+        Console.Write(array[indexMinSumString, j] + " ");
     }
     Console.WriteLine();          
 }
