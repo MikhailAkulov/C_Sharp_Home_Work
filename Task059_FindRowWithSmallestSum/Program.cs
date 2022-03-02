@@ -13,7 +13,7 @@ void FillArray()
     }
 }
 
-async void PrintArray()
+void PrintArray()
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
