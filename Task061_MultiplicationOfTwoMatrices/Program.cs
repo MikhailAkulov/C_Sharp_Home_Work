@@ -1,9 +1,47 @@
 ﻿// Задача 61. Найти произведение двух матриц
 
-int[,] arrayOne = new int[3, 3];
-int[,] arrayTwo = new int[3, 3];
-int[,] arrayResult = new int[3, 3];
+int a = CheckInputIsNumber("Введите количество строк первой матрицы: ");
+int b = CheckInputIsNumber("Введите количество столбцов первой матрицы: ");
+int[,] arrayOne = new int[a, b];
+int c = CheckInputIsNumber("Введите количество строк второй матрицы:");
+int d = CheckInputIsNumber("Введите количество столбцов второй матрицы: ");
+int[,] arrayTwo = new int[c, d];
+int[,] arrayResult = new int[a, d];
 Random rand = new Random();
+
+if (b != c)
+    Console.WriteLine("Для умножения матриц необходимо чтобы число столбцов первой матрицы было равно числу строк второй матрицы");
+else
+{
+    Console.WriteLine("Матрица №1:");
+    FillArrayOne(arrayOne);
+    PrintArray(arrayOne);
+    Console.WriteLine("Матрица №2:");
+    FillArrayTwo(arrayTwo);
+    PrintArray(arrayTwo);
+    Console.WriteLine("=============================");
+    Console.WriteLine("Произведение матриц:");
+    MultiplicationArray(arrayResult, arrayOne, arrayTwo);
+    PrintArray(arrayResult);
+}
+
+int CheckInputIsNumber(string text)
+{
+    int number;
+    Console.Write(text);
+    string? input = Console.ReadLine();
+    bool isNum = int.TryParse(input, out number);
+
+    while (!isNum)
+    {
+        Console.Write("Вы ввели не целое число! Попробуйте ещё разок: ");
+        input = Console.ReadLine();
+        isNum = int.TryParse(input, out number);
+    }
+
+    return number;
+}
+
 void FillArrayOne(int[,] arrayOne)
 {
     for (int i = 0; i < arrayOne.GetLength(0); i++)
@@ -51,14 +89,3 @@ void MultiplicationArray(int[,] arrayResult, int[,] arrayOne, int[,] arrayTwo)
         }
     }
 }
-
-Console.WriteLine("Матрица №1:");
-FillArrayOne(arrayOne);
-PrintArray(arrayOne);
-Console.WriteLine("Матрица №2:");
-FillArrayTwo(arrayTwo);
-PrintArray(arrayTwo);
-Console.WriteLine("=============================");
-Console.WriteLine("Произведение матриц:");
-MultiplicationArray(arrayResult, arrayOne, arrayTwo);
-PrintArray(arrayResult);
