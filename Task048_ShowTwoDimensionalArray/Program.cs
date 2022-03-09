@@ -30,7 +30,7 @@ void FillArray()
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 10);
+            array[i, j] = rand.Next(1, 10);
         }
     }
 }
