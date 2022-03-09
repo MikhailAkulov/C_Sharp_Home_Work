@@ -1,8 +1,8 @@
 ﻿// Задача 61. Найти произведение двух матриц
 
 int[,] arrayOne = new int[3, 3];
-int[,] arrayTwo = new int[3, 2];
-int[,] arrayResult = new int[3, 2];
+int[,] arrayTwo = new int[3, 3];
+int[,] arrayResult = new int[3, 3];
 Random rand = new Random();
 void FillArrayOne(int[,] arrayOne)
 {
@@ -10,7 +10,7 @@ void FillArrayOne(int[,] arrayOne)
     {
         for (int j = 0; j < arrayOne.GetLength(1); j++)
         {
-            arrayOne[i, j] = new Random().Next(1, 10);
+            arrayOne[i, j] = rand.Next(1, 10);
         }
     }
 }
@@ -21,7 +21,7 @@ void FillArrayTwo(int[,] arrayTwo)
     {
         for (int j = 0; j < arrayTwo.GetLength(1); j++)
         {
-            arrayTwo[i, j] = new Random().Next(1, 10);
+            arrayTwo[i, j] = rand.Next(1, 10);
         }
     }
 }
