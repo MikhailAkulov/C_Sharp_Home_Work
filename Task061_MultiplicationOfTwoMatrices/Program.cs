@@ -1,10 +1,10 @@
 ﻿// Задача 61. Найти произведение двух матриц
 
-int a = CheckInputIsNumber("Введите количество строк первой матрицы: ");
-int b = CheckInputIsNumber("Введите количество столбцов первой матрицы: ");
+int a = CheckInputIsNumber("введите количество строк первой матрицы: ");
+int b = CheckInputIsNumber("введите количество столбцов первой матрицы: ");
 int[,] arrayOne = new int[a, b];
-int c = CheckInputIsNumber("Введите количество строк второй матрицы:");
-int d = CheckInputIsNumber("Введите количество столбцов второй матрицы: ");
+int c = CheckInputIsNumber("введите количество строк второй матрицы:");
+int d = CheckInputIsNumber("введите количество столбцов второй матрицы: ");
 int[,] arrayTwo = new int[c, d];
 int[,] arrayResult = new int[a, d];
 Random rand = new Random();
@@ -32,13 +32,12 @@ int CheckInputIsNumber(string text)
     string? input = Console.ReadLine();
     bool isNum = int.TryParse(input, out number);
 
-    while (!isNum)
+    while (!isNum || number <= 0)
     {
-        Console.Write("Вы ввели не целое число! Попробуйте ещё разок: ");
+        Console.Write($"Нужно число > 0, ещё разок {text}: ");
         input = Console.ReadLine();
         isNum = int.TryParse(input, out number);
     }
-
     return number;
 }
 
