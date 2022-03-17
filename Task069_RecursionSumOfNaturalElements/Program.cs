@@ -5,7 +5,6 @@
 Console.WriteLine("Эта программа выведет сумму натуральных элементов в промежутке от M до N");
 int M = CheckInputIsNumber("введите число M: ");
 int N = CheckInputIsNumber("введите число N: ");
-//int count = 0;
 
 int CheckInputIsNumber(string text)
 {
@@ -23,25 +22,25 @@ int CheckInputIsNumber(string text)
     return number;
 }
 
-string SumRec(int M, int N, int count = 0)
+void SumRec(int M, int N, int sum)
 {
-    /*if (M > N)
+    if (M != N)
     {
-        int temp = M;
-        M = N;
-        N = temp;
+        sum++;
+        M++;
+        SumRec(M, N, sum);
     }
-    if (M == N) return M;
-    else return M + SummRecurse(M + 1, N);*/
-
-    if (M <= N)
+    else
     {
-        return SumRec(M, N, count++);
-    }
-    else 
-    {
-        return String.Empty;
+        sum++;
+        Console.Write($"Сумма натуральных элементов в промежутке от M до N = {sum}");
     }
 }
-
-Console.WriteLine($"Сумма элементов от {M} до {N} равна - {SumRec(M, N, count)}");
+if (M < N)
+{
+    SumRec(M, N, 0);
+}
+else
+{
+    SumRec(M, N, 0);
+}
